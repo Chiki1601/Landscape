@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title> Landscape Circle SVG</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<svg viewBox="0 0 500 500">
+	<g class="scene1">
+		<defs>
+			<clipPath id="circle">
+				<circle class="mask" cx="250" cy="250" r="100" />
+			</clipPath>
+			<clipPath id="ground">
+				<rect x="50" y="50" width="400" height="260" />
+			</clipPath>
+		</defs>
+	
+		<g clip-path="url(#circle)">
+			<rect class="bg" x="0" y="0" width="500" height="500" />
+			
+			<g clip-path="url(#ground)">
+				<rect class="sky3" x="50" y="130" width="350" height="70" />
+				<rect class="sky2" x="50" y="200" width="350" height="50" />
+				<rect class="sky1" x="50" y="250" width="350" height="50" />
+				
+				<g class="mountain" transform="translate(150 185)">
+					<polygon class="mountain-left" points="100,0 100,120 0,120" />
+					<polygon class="mountain-right" points="100,0 200,120 100,120" />
+					<polygon class="mountain-top-left" points="100,0 100,30 75,30" />
+					<polygon class="mountain-top-right" points="100,0 125,30 100,30" />
+				</g>
+			</g>
+			
+			<g class="tree tree1" transform="translate(150 255)">
+				<polygon class="tree-left" points="15,0 15,50 0,50" />
+				<polygon class="tree-right" points="15,0 15,50 30,50" />
+			</g>
+			
+			<g class="tree tree2" transform="translate(180 255)">
+				<polygon class="tree-left" points="15,0 15,50 0,50" />
+				<polygon class="tree-right" points="15,0 15,50 30,50" />
+			</g>
+			
+			<g class="tree tree3" transform="translate(210 255)">
+				<polygon class="tree-left" points="15,0 15,50 0,50" />
+				<polygon class="tree-right" points="15,0 15,50 30,50" />
+			</g>
+			
+			<g class="tree tree4" transform="translate(240 255)">
+				<polygon class="tree-left" points="15,0 15,50 0,50" />
+				<polygon class="tree-right" points="15,0 15,50 30,50" />
+			</g>
+			
+			<g class="tree tree5" transform="translate(270 255)">
+				<polygon class="tree-left" points="15,0 15,50 0,50" />
+				<polygon class="tree-right" points="15,0 15,50 30,50" />
+			</g>
+			
+			<g class="tree tree6" transform="translate(300 255)">
+				<polygon class="tree-left" points="15,0 15,50 0,50" />
+				<polygon class="tree-right" points="15,0 15,50 30,50" />
+			</g>
+			
+			<g class="tree tree7" transform="translate(330 255)">
+				<polygon class="tree-left" points="15,0 15,50 0,50" />
+				<polygon class="tree-right" points="15,0 15,50 30,50" />
+			</g>
+
+			<rect class="ground" x="100" y="300" width="350" height="10" />
+		</g>
+	</g>
+</svg>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
